@@ -3,9 +3,9 @@
 if ($_SERVER['REQUEST_METHOD']=="POST"){
 	// In testing, if you get an Bad referer error
 	// comment out or remove the next three lines
-	if (strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST'])>7 ||
+	/* if (strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST'])>7 ||
 		 !strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST']))
-		 die("Bad referer");
+		 die("Bad referer"); */
 	$msg="Values submitted by the user:\n";
 	foreach($_POST as $key => $val){
 		 if (is_array($val)){
